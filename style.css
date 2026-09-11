@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e6f9a5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-card {
+
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.side-card {
+  width: 15%;
+  padding: 1rem;
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+}
+
+.btn-card {
+  height: auto;
+  width: 60vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 1rem;
+
+}
+
+.btn-item {
+    background-color: #e0e6f9a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 8rem;
+}
+.btn-item:hover{
+    border: #4d83d0 solid 5px;
+}
+.btn-text-color{
+    color: #4d83d0;
+    font-weight: bold;
+}
+
+.btn-summ {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid #e0e6f9a5 3px;
+  padding-top: 1rem;
+}
+.btn-delete {
+  height: 3rem;
+  background-color: #dc2a33;
+  color: white;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.btn-orders {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn-order {
+  height: 3rem;
+  color: white;
+  background-color: #44ab4e;
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+.btn-delivery {
+  height: 3rem;
+  color: white;
+  background-color: #4d83d0;
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+#summ {
+  color:#4d83d0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
