@@ -4,58 +4,140 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
     <title>Preisrechner</title>
   </head>
   <body>
     <div class="main-card">
       <h1>Preisrechner:</h1>
       <div class="btn-card">
-        <button class="btn-item">
-          Kaffee <span class="btn-text-color">3.50 €</span>
+        <button
+          data-text="Kaffee"
+          data-wert="3.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
+          Kaffee
+          <span class="btn-text-color">3.50€</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Tee"
+          data-wert="2.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Tee <span class="btn-text-color">2.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Apfelschorle"
+          data-wert="4.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Apfelschorle <span class="btn-text-color">4.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Wasser"
+          data-wert="2.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Wasser <span class="btn-text-color">2.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Bratwurst"
+          data-wert="5.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Bratwurst <span class="btn-text-color">5.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Schnitzel"
+          data-wert="12.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Schnitzel <span class="btn-text-color">12.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Currywurst"
+          data-wert="6.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Currywurst <span class="btn-text-color">6.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Brezel"
+          data-wert="4.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Brezel <span class="btn-text-color">4.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Käsespätzle"
+          data-wert="8.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Käsespätzle <span class="btn-text-color">8.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Pommes"
+          data-wert="3.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Pommes <span class="btn-text-color">3.50 €</span>
         </button>
-        <button class="btn-item">
-          Apfelschtrudel <span class="btn-text-color">4.50 €</span>
+        <button
+          data-text="Apfelstrudel"
+          data-wert="4.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
+          Apfelstrudel <span class="btn-text-color">4.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Berliner"
+          data-wert="3.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Berliner <span class="btn-text-color">3.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Schwarzwälder"
+          data-wert="5.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Schwarzwälder <span class="btn-text-color">5.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Bröchen"
+          data-wert="2.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Brötchen <span class="btn-text-color">2.50 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Leberkäse"
+          data-wert="7.00"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Leberkäse <span class="btn-text-color">7.00 €</span>
         </button>
-        <button class="btn-item">
+        <button
+          data-text="Kartoffelsalat"
+          data-wert="6.50"
+          class="btn-item"
+          onclick="inputButton(this)"
+        >
           Kartoffelsalat <span class="btn-text-color">6.50 €</span>
         </button>
       </div>
