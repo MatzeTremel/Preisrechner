@@ -145,10 +145,10 @@
         <h3>Gesamt:</h3>
         <span id="sum">0,00 € </span>
       </div>
-      <button class="btn-delete" onclick="">Zurücksetzen</button>
+      <button type="button" onclick="orderDelete()" class="btn-delete" onclick="">Zurücksetzen</button>
       <div class="btn-orders">
-        <button class="btn-order">Vor Ort</button>
-        <button class="btn-delivery">Lieferung</button>
+        <button class="btn-order" onclick="pickedUp()">Vor Ort</button>
+        <button class="btn-delivery" onclick="Deliveries()" >Lieferung</button>
       </div>
     </div>
 

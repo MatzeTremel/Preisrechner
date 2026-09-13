@@ -6,7 +6,6 @@ function inputs(preis, text) {
   total += preis;
   orderField(preis, text);
   addUp();
-  
 }
 
 function inputButton(elem) {
@@ -23,8 +22,39 @@ function addUp() {
 }
 
 function orderField(preis, text) {
-  let toOrder = (document.getElementById("order").innerHTML +=
-    text + " " + preis.toFixed(2) + ' €<br><br><div class="order"><div>');
+  document.getElementById("order").innerHTML +=
+    `<p>${text} ${preis.toFixed(2)} €</p>`;
 }
 
+function orderDelete() {
+  total = 0;
+  document.getElementById("order").innerHTML = "";
+  document.getElementById("sum").innerHTML = total.toFixed(2) + " €";
+}
 
+function pickedUp() {
+  if (total === 0) {
+    alert("Bestellung ist aktuell leer. ");
+  } else {
+    alert(`Bestellung abgeholt – Gesamtbetrag: ${total.toFixed(2)} €`);
+    total = 0;
+    document.getElementById("order").innerHTML = "";
+    document.getElementById("sum").innerHTML = total.toFixed(2) + " €";
+  }
+}
+
+function Deliveries() {
+  if (total === 0) {
+    alert("Bestellung ist aktuell leer. ");
+  } else if (total < 20) {
+    alert("Die Bestellung erreicht den Mindestbestellwert von 20 € NICHT !!!");
+  } else {
+    charge = 2.5;
+    total += charge;
+        alert(`Die Bestellung wird geliefert. Liefergebühr: 2,50 €. Gesamtbetrag: ${total.toFixed(2)} €`)
+    console.log("test", total);
+    total = 0;
+    document.getElementById("order").innerHTML = "";
+    document.getElementById("sum").innerHTML = total.toFixed(2) + " €";
+  }
+}
