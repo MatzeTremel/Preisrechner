@@ -23,7 +23,7 @@ function addUp() {
 
 function orderField(preis, text) {
   document.getElementById("order").innerHTML +=
-    `<p>${text} ${preis.toFixed(2)} €</p>`;
+    `<p class="order" >${text} ${preis.toFixed(2)} €</p>`;
 }
 
 function orderDelete() {
