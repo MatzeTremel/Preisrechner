@@ -16,9 +16,8 @@ function inputButton(elem) {
 }
 
 function addUp() {
-  let toAddUp = (document.getElementById("sum").innerHTML =
+  (document.getElementById("sum").innerHTML =
     total.toFixed(2) + " €");
-  console.log("test", toAddUp);
 }
 
 function orderField(preis, text) {
@@ -30,6 +29,7 @@ function orderDelete() {
   total = 0;
   document.getElementById("order").innerHTML = "";
   document.getElementById("sum").innerHTML = total.toFixed(2) + " €";
+  
 }
 
 function pickedUp() {
@@ -41,7 +41,7 @@ function pickedUp() {
   }
 }
 
-function Deliveries() {
+function deliveries() {
   if (total === 0) {
     alert("Bestellung ist aktuell leer. ");
   } else if (total < 20) {
